@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>回文チェック</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <h1>回文チェック</h1>
+            <label for="inStr">文字列を入力してください：</label>
+            <input type="text" name="inStr" v-model.trim="inStr" />
+            <p>{{ palindrome() }}</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+        <script src="./palindrome.js"></script>
+    </body>
+</html>
