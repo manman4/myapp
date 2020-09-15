@@ -1,6 +1,9 @@
 from flask import Flask
+
+# flaskオブジェクトの作成
 app = Flask(__name__)
 
+# / へのアクセスの処理
 @app.route('/')
 def hello():
     name = "Hello World"
