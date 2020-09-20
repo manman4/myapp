@@ -52,5 +52,5 @@ int i = 0; //コード
 
 |  サイト  |  URL  |
 | ---- | ---- |
-|  LinkData  |  [http://linkdata.org/](http://linkdata.org/)  |
-|  TD  |  TD  |
+|  LinkData  |  [http://linkdata.org](http://linkdata.org)  |
+|  郵便番号  |  [https://www.post.japanpost.jp/zipcode/download.html](https://www.post.japanpost.jp/zipcode/download.html)   |
