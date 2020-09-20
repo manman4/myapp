@@ -55,3 +55,4 @@ int i = 0; //コード
 |  LinkData  |  [http://linkdata.org](http://linkdata.org)  |
 |  郵便番号  |  [https://www.post.japanpost.jp/zipcode/download.html](https://www.post.japanpost.jp/zipcode/download.html)   |
 |  e-Stat 政府統計の総合窓口  |  [https://www.e-stat.go.jp](https://www.e-stat.go.jp)   |
+|  DATA GO JP  |  [https://www.data.go.jp](https://www.data.go.jp)   |
