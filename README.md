@@ -41,7 +41,9 @@
 int i = 0; //コード
 ```
 
-例：[Qiita](http://qiita.com/)
+<http://qiita.com>
+
+例：[Qiita](http://qiita.com)
 
 
 > テキスト
