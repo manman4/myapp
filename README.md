@@ -69,3 +69,17 @@ __ボールド__
 |  郵便番号  |  [https://www.post.japanpost.jp/zipcode/download.html](https://www.post.japanpost.jp/zipcode/download.html)   |
 |  e-Stat 政府統計の総合窓口  |  [https://www.e-stat.go.jp](https://www.e-stat.go.jp)   |
 |  DATA GO JP  |  [https://www.data.go.jp](https://www.data.go.jp)   |
+
+***
+
+（Sourcetree)
+
+一度リモートリポジトリとローカルのソースのやりとりがなくなった場合
+
+Sourcetreeでaddし、一度（空でもいいので）pushする
+
+例えば、Githubにあげていないファイルがローカルに残っている場合
+
+この方法は安全。
+
+
