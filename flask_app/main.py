@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+from config import log_file_dir
 
 # flaskオブジェクトの作成
 app = Flask(__name__)
@@ -7,7 +8,7 @@ app = Flask(__name__)
 # / へのアクセスの処理
 @app.route('/')
 def show_result():
-    with open("test.txt", "r") as f:
+    with open(log_file_dir, "r") as f:
         data_list = []
         for i in f:
           data_list.append(i.rstrip("\n"))
