@@ -1,5 +1,77 @@
 <!DOCTYPE html>
-<p>{{ start_time }}</p>
-<p>{{ end_time }}</p>
-<p>{{ num }}</p>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Graph</title>
+  <script src="static/Chart.bundle.min.js"></script>  
+</head>
+
+<body>
+  <h3 style="margin-left: 5%">グラフ</h3>
+  <div style="text-align: center; height: 400px; width: 80%; margin-left: 5%">
+    <canvas id="bar"></canvas>
+    {% for data in gen_data %}
+
+    <script>
+      var x_val = {{data.val | safe}};
+      var x_label = {{data.label | safe}};
+
+      var chartData = {
+          labels: x_label,
+          datasets: [
+          {
+            label: '人数',
+            backgroundColor: '#167e20',
+            data: x_val,
+          },
+          ]
+      };
+
+      var chart_elem = document.getElementById('bar').getContext('2d');
+      if (bar){
+        bar.destroy();
+      }
+
+      var bar = new Chart(chart_elem, {
+        type: 'bar',
+        data: chartData,
+        options: {
+          animation: false,
+          scales: {
+            yAxes: [{
+              display: true,
+              scaleLabel: {
+                display: true,
+                labelString: '人数',
+                fontSize: 14,
+              },
+              ticks: {
+                min: 0,
+                stepSize: 1,
+                fontSize: 14,
+              },
+            }],
+            xAxes: [{
+              display: true,
+              scaleLabel: {
+                display: true,
+                labelString: '時刻',
+                fontSize: 14,
+              },
+              ticks: {
+                maxTicksLimit: 100,
+                fontSize: 14,
+              },
+            }],
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      });
+
+    </script>
+    {% endfor %}
+   </div>
+</body>
 </html>
