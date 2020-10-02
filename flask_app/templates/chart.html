@@ -17,14 +17,14 @@
       var x_label = {{data.label | safe}};
 
       var chartData = {
-          labels: x_label,
-          datasets: [
-          {
-            label: '人数',
-            backgroundColor: '#167e20',
-            data: x_val,
-          },
-          ]
+        labels: x_label,
+        datasets: [
+        {
+          label: '人数',
+          backgroundColor: '#167e20',
+          data: x_val,
+        },
+        ]
       };
 
       var chart_elem = document.getElementById('bar').getContext('2d');
