@@ -7,7 +7,7 @@ app = Flask(__name__)
 # / へのアクセスの処理
 @app.route('/')
 def show_result():
-    with open("test.txt", "r") as f:
+    with open("test_proto.txt", "r") as f:
         data_list = []
         for i in f:
           data_list.append(i.rstrip("\n"))
@@ -16,7 +16,7 @@ def show_result():
         end_time = data_list[1]
         num = data_list[2]
 
-    return render_template("result.html", start_time=start_time,
+    return render_template("result_proto.html", start_time=start_time,
                             end_time=end_time, num=num)
 
 if __name__ == "__main__":
