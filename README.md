@@ -92,6 +92,8 @@ __ボールド__
 
 # mermaid
 
+mermaidを使って図やグラフを入れる
+
 
 ```mermaid
 stateDiagram
