@@ -80,9 +80,6 @@ __ボールド__
 
 
 
-
-
-
 |  サイト  |  URL  |
 | ---- | ---- |
 |  LinkData  |  [http://linkdata.org](http://linkdata.org)  |
@@ -91,6 +88,21 @@ __ボールド__
 |  DATA GO JP  |  [https://www.data.go.jp](https://www.data.go.jp)   |
 
 ***
+
+
+# mermaid
+
+
+```mermaid
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+```
 
 
 
