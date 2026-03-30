@@ -11,6 +11,10 @@
             <label for="inStr">文字列を入力してください：</label>
             <input type="text" name="inStr" v-model.trim="inStr" />
             <p>{{ palindrome() }}</p>
+            <p>
+                <span v-for="item in highlightedChars()" :style="item.mismatch ? 'color: red; font-weight: bold;' : ''">{{ item.char }}</span>
+            </p>
+            <p><small>※ 大文字・小文字は区別して判定します（例：「Racecar」は回文として判定されません）</small></p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
         <script src="./palindrome.js"></script>
